@@ -5,7 +5,7 @@
 </p>
 
 
-This repository contains the code for my Masters' Thesis, dedicated to detecting Markush structures in image containing chemical structures. The thesis can be read [here](). It is recommended to read it to understand what the function and goal of the code in this repository is.
+This repository contains the code for my Masters' Thesis, dedicated to detecting Markush structures in image containing chemical structures. The thesis can be read [here](assets/Thomas_Jurriaans_MSc_Information_Studies_DS_Master_Thesis.pdf). It is recommended to read it to understand what the function and goal of the code in this repository is.
 
 ## Reproduction
 In order to reproduce the research, you can use the code available in this repository. However, some adaptations will be required.
