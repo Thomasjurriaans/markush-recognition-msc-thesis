@@ -20,7 +20,7 @@ For legal reasons, the exact (processed, labeled and annotated) data that was us
 Images containing chemical structures can easily be extracted by filtering based on the filename. For chemical images, after the date there is always a "C" as the first character of the identifier.
 
 ### Labeling and Annotation
-After extraction, the images must still be labeled and annotated. The current code is set up to use 2 folders (data/training/Markush and data/training/NoMarkush) to seperate classes. A single JSON file is used which contains the annotation information for the Markush images. For this project, [Label Studio](https://labelstud.io/) was used for labeling. Use the JSON-MIN export format to get annotations compatible with this project.
+After extraction, the images must still be labeled and annotated. The current code is set up to use 2 folders (data/training/Markush and data/training/NoMarkush) to separate classes. A single JSON file is used which contains the annotation information for the Markush images. For this project, [Label Studio](https://labelstud.io/) was used for labeling. Use the JSON-MIN export format to get annotations compatible with this project.
 
 <p float="left" align="center">
     <img width="400" src="assets/Patch_grid_example.png" />
@@ -31,7 +31,7 @@ This project was an exploratory data science project, with the goal of creating 
 
 #### Modules - markush.py
 
-The `MarkushDataset` class inherits from the PyTorch `Dataset` class and implements its required methods. It is used to load data from disk and make it available for further use. Despite there being a seperate `PatchesDataset`, `MarkushDataset` also creates patches from the images, which are used by the ORB method as templates. These patches differ from the ones made by `PatchesDataset` in that they are always centered on a Markush annotation. This is not an ideal setup, and could be improved by moving this functionality elsewhere, for example with a `TemplatesDataset`.
+The `MarkushDataset` class inherits from the PyTorch `Dataset` class and implements its required methods. It is used to load data from disk and make it available for further use. Despite there being a separate `PatchesDataset`, `MarkushDataset` also creates patches from the images, which are used by the ORB method as templates. These patches differ from the ones made by `PatchesDataset` in that they are always centered on a Markush annotation. This is not an ideal setup, and could be improved by moving this functionality elsewhere, for example with a `TemplatesDataset`.
 
 #### Modules - orbGridSearch.py
 
